@@ -19,6 +19,7 @@ typedef struct
   int y;
 } Point;
 
-#define DISTANCE_BETWEEN(pointA, pointB) sqrt(pow(pointA.x - pointB.x, 2) + pow(pointA.y - pointB.y, 2))
+#define LOOP(start, end) for(int index = start; index < end; index++)
 
+float distance_between(Point p1, Point p2);
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
